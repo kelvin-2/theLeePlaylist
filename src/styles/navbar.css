@@ -1,0 +1,39 @@
+nav{
+    display:flex;
+    flex-direction: row;
+    z-index: 1000;
+    background-color: rgb(81, 113, 106);
+    width: 100vw;
+    position: fixed;
+    top:0;
+    left:0;
+    padding:15px;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 0;
+
+}
+ul {
+    list-style: none; /* Remove default bullet points */
+    display: flex;
+    gap: 30px; /* Space between items */
+    padding: 0;
+    margin-left: 0;
+    align-items: center;
+}
+
+button {
+    background-color: transparent;
+    border: none; /* Removes border if needed */
+    color: white; /* Ensures text is visible */
+    cursor: pointer; /* Makes it clickable */
+    font-size: 16px;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+button:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+button:active {
+    border-bottom: 2px solid white; /* Adds a bottom border when active */
+}
