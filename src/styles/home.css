@@ -1,0 +1,24 @@
+.content {
+    height: 100vh; /* 100% of the viewport height */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+    text-align: center;
+    color: white; /* Ensures text is visible */
+    font-size: 17px;
+    margin-bottom:14%;
+}
+h2,h1{
+    margin: 0;
+}
+h1{
+    margin-bottom: 10px;
+}
+h2{
+    margin-bottom: 30px;
+}
+body{
+    background-color: #212121 ;
+}

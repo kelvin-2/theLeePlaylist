@@ -1,6 +1,6 @@
 import './App.css';
 import Navbar from "./components/NavBar.jsx";
-import Home from "./components/LandingPage.jsx";
+import Home from "./components/Home.jsx";
 
 function App() {
   return (

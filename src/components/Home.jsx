@@ -1,5 +1,5 @@
 import React from "react";
-
+import '../styles/home.css'
 function homePage(){
     return (
          <div className="content">
