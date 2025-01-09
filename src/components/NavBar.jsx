@@ -4,11 +4,13 @@ import '../styles/navbar.css'
 const NavBar = () => {
     return (
         <nav>
-            <ul>
+            <ul className="nav-left">
                 <button>Home</button>
-                <li>About</li>
-                <li>Albums</li>
-                <li>Artists</li>
+            </ul>
+            <ul className="nav-right">
+                <button>About</button>
+                <button>Albums</button>
+                <button>Artists</button>
             </ul>
         </nav>
     );
