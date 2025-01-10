@@ -1,14 +1,18 @@
-import './App.css';
-import Navbar from "./components/NavBar.jsx";
-import Home from "./components/Home.jsx";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import NavBar from "./components/NavBar";
+import Home from "./components/Home";
 
 function App() {
-  return (
-    <div>
-      <Navbar />
-      <Home/>
-    </div>
-  );
+    return (
+        <Router>
+            <NavBar />
+            <Routes>
+                <Route path="/" element={<Home />} />
+               
+            </Routes>
+        </Router>
+    );
 }
 
 export default App;

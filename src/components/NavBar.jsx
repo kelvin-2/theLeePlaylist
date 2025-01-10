@@ -1,5 +1,6 @@
 import React from "react";
-import '../styles/navbar.css'
+import { useNavigate } from "react-router-dom";
+import "../styles/navbar.css";
 
 const NavBar = () => {
     return (
@@ -17,3 +18,4 @@ const NavBar = () => {
 }
 
 export default NavBar;
+
