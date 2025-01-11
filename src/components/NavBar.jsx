@@ -1,21 +1,43 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import "../styles/navbar.css";
 
-const NavBar = () => {
+const NavBar = ({setCurrentPage, currentPage}) => {
+    // Define button styles - use your CSS classes from navbar.css
+    const buttonClass = "nav-button"; // Add this class in your CSS
+    const activeClass = "nav-button active"; // Add this class in your CSS
+
     return (
         <nav>
             <ul className="nav-left">
-                <button>Home</button>
+                <button 
+                    onClick={() => setCurrentPage('home')} 
+                    className={currentPage === 'home' ? activeClass : buttonClass}
+                >
+                    Home
+                </button>
             </ul>
             <ul className="nav-right">
-                <button>About</button>
-                <button>Albums</button>
-                <button>Artists</button>
+                <button 
+                    onClick={() => setCurrentPage('about')} 
+                    className={currentPage === 'about' ? activeClass : buttonClass}
+                >
+                    About
+                </button>
+                <button 
+                    onClick={() => setCurrentPage('albums')} 
+                    className={currentPage === 'albums' ? activeClass : buttonClass}
+                >
+                    Albums
+                </button>
+                <button 
+                    onClick={() => setCurrentPage('artists')} 
+                    className={currentPage === 'artists' ? activeClass : buttonClass}
+                >
+                    Artists
+                </button>
             </ul>
         </nav>
     );
 }
 
 export default NavBar;
-

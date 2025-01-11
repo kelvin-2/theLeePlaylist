@@ -1,6 +1,6 @@
 import React from "react";
 import '../styles/home.css'
-function homePage(){
+function Home(){
     return (
          <div className="content">
              <h1>Soundtrack for Me</h1>
@@ -14,4 +14,4 @@ function homePage(){
     );
 }
 
-export default homePage;
+export default Home;
