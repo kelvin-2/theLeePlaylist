@@ -4,8 +4,7 @@ import "../styles/navbar.css";
 const NavBar = ({setCurrentPage, currentPage}) => {
     // Define button styles - use your CSS classes from navbar.css
     const buttonClass = "nav-button"; // Add this class in your CSS
-    const activeClass = "nav-button active"; // Add this class in your CSS
-
+    const activeClass = "nav-button active"; 
     return (
         <nav>
             <ul className="nav-left">
@@ -15,6 +14,9 @@ const NavBar = ({setCurrentPage, currentPage}) => {
                 >
                     Home
                 </button>
+            </ul>
+            <ul className="nav-middle">
+                <button className="search_bar">hi</button>
             </ul>
             <ul className="nav-right">
                 <button 
