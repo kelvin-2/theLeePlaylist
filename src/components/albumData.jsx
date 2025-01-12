@@ -1,4 +1,4 @@
-const albumData = [
+export const albumData = [
     {
       cover: "/api/placeholder/300/300",
       name: "Midnight Memories",
@@ -70,5 +70,3 @@ const albumData = [
       genre: "Folk Rock"
     }
   ];
-  
-  export default albumData;
