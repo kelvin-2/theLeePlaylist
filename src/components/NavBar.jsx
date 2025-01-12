@@ -17,12 +17,7 @@ const NavBar = ({setCurrentPage, currentPage}) => {
             </ul>
             
             <ul className="nav-right">
-                <button 
-                    onClick={() => setCurrentPage('about')} 
-                    className={currentPage === 'about' ? activeClass : buttonClass}
-                >
-                    About
-                </button>
+               
                 <button 
                     onClick={() => setCurrentPage('albums')} 
                     className={currentPage === 'albums' ? activeClass : buttonClass}
@@ -34,6 +29,19 @@ const NavBar = ({setCurrentPage, currentPage}) => {
                     className={currentPage === 'artists' ? activeClass : buttonClass}
                 >
                     Artists
+                </button>
+                <button 
+                    onClick={() => setCurrentPage('tiny_disk')} 
+                    className={currentPage === 'tiny_disk' ? activeClass : buttonClass}
+                >
+                    Tiny Disk
+                </button>
+
+                <button 
+                    onClick={() => setCurrentPage('about')} 
+                    className={currentPage === 'about' ? activeClass : buttonClass}
+                >
+                    About
                 </button>
             </ul>
         </nav>
