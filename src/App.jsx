@@ -11,7 +11,7 @@ function App() {
             case 'home':
                 return <Home />;
             case 'about':
-               return <About />;
+               return <About/>;
             default:
                 return <Home />;
         }
