@@ -1,7 +1,9 @@
 import React from "react";
+import '../styles/albums.css'
+import { albumData } from './albumData';
 
-function makeAblum({ albumsList }) {
-   
+function makeAlbum({ albumsList }) {
+   return (
       <div className="album-container">
         {albumsList.map((album, index) => (
           <div key={index} className="album-card">
@@ -16,16 +18,11 @@ function makeAblum({ albumsList }) {
           </div>
         ))}
       </div>
-    
-  }
-  // Example usage
-  const albumData = [
-    { cover: "https://via.placeholder.com/150", name: "Album 1", artist: "Artist A" },
-    { cover: "https://via.placeholder.com/150", name: "Album 2", artist: "Artist B" },
-  ]
+   );
+}
 
-  function Albums(){
-    return makeAblum({ albumsList: albumData })
-  }
+function Albums(){
+    return makeAlbum({ albumsList: albumData });
+}
 
-  export default Albums;
+export default Albums;
