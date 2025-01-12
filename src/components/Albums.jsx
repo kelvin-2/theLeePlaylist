@@ -11,7 +11,7 @@ function Albums() {
       <div className="album-container">
       {albumData.map((album, index) => (
         <div key={index} className="album-card">
-          <p className="album-position">Position: {index + 1}</p>
+          <p className="album-position">{index + 1}</p>
           <div className="album-cover">
             <img src={album.cover} alt={album.name} />
           </div>
