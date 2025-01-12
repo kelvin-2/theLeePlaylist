@@ -40,3 +40,12 @@
 .read-the-docs {
   color: #888;
 }
+.main-content {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Centers content horizontally */
+  align-items: center;
+  flex-direction: column; /* Ensures content stacks vertically */
+  margin-top: 80px; /* Prevents overlap with navbar */
+  padding: 20px;
+}

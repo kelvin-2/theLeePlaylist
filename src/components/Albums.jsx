@@ -4,7 +4,11 @@ import { albumData } from "./albumData.jsx";
 
 function Albums() {
   return (
-    <div className="album-container">
+    <div className="container">
+     <h1 className="heading">
+        <span className="highlight">Top 20 Albums</span>: The Soundtrack of My Life
+      </h1>
+      <div className="album-container">
       {albumData.map((album, index) => (
         <div key={index} className="album-card">
           <p className="album-position">Position: {index + 1}</p>
@@ -18,6 +22,9 @@ function Albums() {
         </div>
       ))}
     </div>
+
+    </div>
+
   );
 }
 

@@ -23,7 +23,9 @@ function App() {
     return (
         <div>
             <NavBar setCurrentPage={setCurrentPage} currentPage={currentPage} />
-            {renderPage()}
+            <div className="main-content">
+                {renderPage()}
+            </div>
         </div>
     );
 }
