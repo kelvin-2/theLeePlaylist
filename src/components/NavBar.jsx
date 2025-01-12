@@ -15,9 +15,7 @@ const NavBar = ({setCurrentPage, currentPage}) => {
                     Home
                 </button>
             </ul>
-            <ul className="nav-middle">
-                <button className="search_bar">hi</button>
-            </ul>
+            
             <ul className="nav-right">
                 <button 
                     onClick={() => setCurrentPage('about')} 
