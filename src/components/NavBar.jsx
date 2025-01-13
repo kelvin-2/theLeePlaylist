@@ -38,10 +38,10 @@ const NavBar = ({setCurrentPage, currentPage}) => {
                 </button>
 
                 <button 
-                    onClick={() => setCurrentPage('about')} 
-                    className={currentPage === 'about' ? activeClass : buttonClass}
+                    onClick={() => setCurrentPage('simmy')} 
+                    className={currentPage === 'simmy' ? activeClass : buttonClass}
                 >
-                    About
+                    Simmy
                 </button>
             </ul>
         </nav>
