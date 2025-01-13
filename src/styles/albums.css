@@ -6,7 +6,19 @@
   flex-direction: column;
   align-items: center;
 }
-
+.Searchbar{
+  margin-bottom: 25px;
+  width: 50%;
+}
+.button{
+  margin-left: 20px;
+}
+input{
+  padding: 10px;
+  width: 50%;
+  border-radius: 10px;
+  border:none;
+}
 .heading {
   margin-top:80px;
   margin-left: 40%;
