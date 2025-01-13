@@ -2,28 +2,31 @@ import React, { useState } from "react";
 import NavBar from "./components/NavBar";
 import Home from "./components/Home";
 import About from "./components/About";
-import Albums from "./components/Albums"; // Fixed import
+import Albums from "./components/Albums";
+
 
 function App() {
     const [currentPage, setCurrentPage] = useState('home');
 
     const renderPage = () => {
-        switch (currentPage) {
+        switch(currentPage) {
             case 'home':
                 return <Home />;
             case 'about':
-                return <About />;
+               return <About/>;
             case 'albums':
-                return <Albums />; // Fixed component name
-            default:
+                return <Albums />;
+
                 return <Home />;
         }
-    };
+    }
 
     return (
         <div>
             <NavBar setCurrentPage={setCurrentPage} currentPage={currentPage} />
-            {renderPage()}
+            <div className="main-content">
+                {renderPage()}
+            </div>
         </div>
     );
 }
