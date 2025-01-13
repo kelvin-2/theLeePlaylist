@@ -81,7 +81,7 @@ function TopArtists() {
       const response = await axios.get(
         "https://api.spotify.com/v1/me/top/artists", {
           params: {
-            limit: 10,
+            limit:20 ,//the number of artists being returned
             time_range: timeRange,
           },
           headers: {
@@ -99,6 +99,9 @@ function TopArtists() {
 
   return (
     <div className="top-artists-container">
+      <h1 className="heading">
+        <span className="highlight">Top 10 Artists</span> Who Shaped My Musical Journey
+      </h1>
       <div className="time-range-select">
         <select 
           value={timeRange}
@@ -111,11 +114,11 @@ function TopArtists() {
       </div>
 
       {error && <p className="error-message">{error}</p>}
-
-      <div className="artists-grid">
+      
+      <div className="Artist-container">
         {topArtists.map((artist, index) => (
           <div key={artist.id} className="artist-card">
-            <div className="artist-rank">{index + 1}</div>
+            <p className="artist-position">{index + 1}</p>
             <div className="artist-image">
               <img 
                 src={artist.images[0]?.url} 
@@ -123,13 +126,8 @@ function TopArtists() {
               />
             </div>
             <div className="artist-info">
-              <h3 className="artist-name">{artist.name}</h3>
-              <p className="artist-details">
-                Popularity: {artist.popularity}%
-              </p>
-              <p className="artist-details">
-                Genres: {artist.genres.slice(0, 2).join(", ")}
-              </p>
+              <p className="artist-name">{artist.name}</p>
+              <p className="artist-genres">{artist.genres.slice(0, 2).join(", ")}</p>
             </div>
           </div>
         ))}

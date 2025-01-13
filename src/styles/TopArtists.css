@@ -1,45 +1,81 @@
 .top-artists-container {
+    margin-top: 50px;
     padding: 20px;
+    max-width: 1200px;
+    margin: 50px auto 0;
+  }
+  select{
+    background-color: transparent;
+    color: #666;
+    width: 60%;
+    border-radius:55px;
+  }
+  
+  .heading {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #f8f8f8;
+  }
+  
+  .highlight {
+    color: #dc3545;
   }
   
   .time-range-select {
-    margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 30px;
   }
   
   .time-range-select select {
-    padding: 8px;
+    padding: 8px 16px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 10px;
     font-size: 14px;
+    width: 200px;
+    cursor: pointer;
+    background-color:transparent;
   }
   
   .error-message {
     color: #dc3545;
+    text-align: center;
     margin-bottom: 20px;
   }
   
-  .artists-grid {
+  .Artist-container {
     display: grid;
-    gap: 20px;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px;
   }
   
   .artist-card {
     border: 1px solid #ddd;
     border-radius: 8px;
-    padding: 16px;
+    padding: 20px;
     display: flex;
     align-items: center;
-    gap: 16px;
-    background-color: #fff;
+    gap: 30px;
+    background-color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    margin-left: 50px;
+    width: 90%;
+   cursor: pointer;
   }
   
-  .artist-rank {
+  .artist-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .artist-position {
     font-size: 24px;
     font-weight: bold;
-    width: 32px;
-    text-align: center;
+    color: #dc3545;
+    margin: 0;
+    min-width: 30px;
   }
   
   .artist-image {
@@ -62,11 +98,34 @@
   .artist-name {
     font-size: 18px;
     font-weight: bold;
+    color: #333;
     margin: 0 0 4px 0;
   }
   
-  .artist-details {
+  .artist-genres {
     font-size: 14px;
     color: #666;
     margin: 0;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .Artist-container {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      padding: 10px;
+    }
+    
+    .heading {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .Artist-container {
+      grid-template-columns: 1fr;
+    }
+    
+    .artist-card {
+      padding: 15px;
+    }
   }
