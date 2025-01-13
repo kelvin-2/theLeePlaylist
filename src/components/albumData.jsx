@@ -21,7 +21,7 @@ export const albumData = [
       genre: "Hip Hop"
     },
     {
-      cover: "http://static.vibe.com/files/article_images/adele-21-amazon-best-selling-album.png",
+      cover: "https://t2.genius.com/unsafe/797x0/https%3A%2F%2Fimages.genius.com%2Fb0ea0d0107d6f8fd1c7d320e99f47897.1000x1000x1.png",
       name: "21",
       artist: "Adele",
       year: 2011,
@@ -42,7 +42,7 @@ export const albumData = [
       genre: "Hip Hop"
     },
     {
-      cover: "http://rapdose.com/wp-content/uploads/2016/04/drake-views-album.jpg",
+      cover: "https://t2.genius.com/unsafe/797x0/https%3A%2F%2Fimages.genius.com%2F04ca8f6cc29d2ddde9e6756b92488a6f.1000x1000x1.jpg",
       name: "Views",
       artist: "Drake",
       year: 2016,

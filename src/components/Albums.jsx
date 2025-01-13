@@ -16,18 +16,8 @@ function Albums() {
   return (
     <div className="container">
      <h1 className="heading">
-        <span className="highlight">Top 20 Albums</span>: The Soundtrack of My Life
+        <span className="highlight">Top 10 Albums</span>: The Soundtrack of My Life
       </h1>
-      <div className="Searchbar">
-         <input
-            type="text"
-           // value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            placeholder="Search for an album..."
-          />
-        <button className="button" onClick={searchAlbum}>Search</button>
-
-      </div>
       <div className="album-container">
       {albumData.map((album, index) => (
         <div key={index} className="album-card">
