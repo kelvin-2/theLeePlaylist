@@ -3,7 +3,8 @@ import NavBar from "./components/NavBar";
 import Home from "./components/Home";
 import About from "./components/About";
 import Albums from "./components/Albums";
-import Artists from './components/Artists'
+import Artists from './components/Artists';
+import TopAlbums from "./components/SpotifyAlbums";
 
 
 function App() {
@@ -19,6 +20,8 @@ function App() {
                 return <Albums />;
             case 'artists':
                 return <Artists/>
+            case 'tiny_disk':
+                return <TopAlbums/>
 
                 return <Home />;
         }

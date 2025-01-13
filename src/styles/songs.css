@@ -1,0 +1,127 @@
+.top-songs-container {
+    margin-top: 50px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 50px auto 0;
+  }
+  
+  .select {
+    background-color: transparent;
+    color: #666;
+    width: 60%;
+    border-radius: 55px;
+  }
+  
+  .heading {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #f8f8f8;
+  }
+  
+  .highlight {
+    color: #dc3545;
+  }
+  
+  .time-range-select {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .time-range-select select {
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+    width: 200px;
+    cursor: pointer;
+    background-color: transparent;
+  }
+  
+  .error-message {
+    color: #dc3545;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .song-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  /* Two-column grid */
+    gap: 30px;
+    padding: 20px;
+  }
+  
+  .song-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    margin-left: 50px;
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  .song-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .song-position {
+    font-size: 24px;
+    font-weight: bold;
+    color: #dc3545;
+    margin: 0;
+    min-width: 30px;
+  }
+  
+  .song-cover img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .song-info {
+    flex: 1;
+  }
+  
+  .song-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin: 0 0 4px 0;
+  }
+  
+  .song-artists {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .song-container {
+      grid-template-columns: 1fr;  /* Single column layout for smaller screens */
+      padding: 10px;
+    }
+  
+    .heading {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .song-container {
+      grid-template-columns: 1fr;  /* Single column layout */
+    }
+  
+    .song-card {
+      padding: 15px;
+    }
+  }
+  
