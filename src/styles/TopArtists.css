@@ -1,0 +1,72 @@
+.top-artists-container {
+    padding: 20px;
+  }
+  
+  .time-range-select {
+    margin-bottom: 20px;
+  }
+  
+  .time-range-select select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .error-message {
+    color: #dc3545;
+    margin-bottom: 20px;
+  }
+  
+  .artists-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+  
+  .artist-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .artist-rank {
+    font-size: 24px;
+    font-weight: bold;
+    width: 32px;
+    text-align: center;
+  }
+  
+  .artist-image {
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+  }
+  
+  .artist-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .artist-info {
+    flex: 1;
+  }
+  
+  .artist-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 4px 0;
+  }
+  
+  .artist-details {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+  }

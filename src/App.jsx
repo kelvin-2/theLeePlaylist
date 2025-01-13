@@ -3,6 +3,7 @@ import NavBar from "./components/NavBar";
 import Home from "./components/Home";
 import About from "./components/About";
 import Albums from "./components/Albums";
+import Artists from './components/Artists'
 
 
 function App() {
@@ -16,6 +17,8 @@ function App() {
                return <About/>;
             case 'albums':
                 return <Albums />;
+            case 'artists':
+                return <Artists/>
 
                 return <Home />;
         }
