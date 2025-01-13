@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/albums.css";
 import { albumData } from "./albumData.jsx";
 
-
+//DONT TOUCH THIS 
 async function searchAlbum(query) {
   const response = await axios.get(
       `https://api.spotify.com/v1/search?q=${query}&type=album`,

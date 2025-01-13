@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import '../styles/searchAlbums.css'
 
 const SPOTIFY_TOKEN = "BQA5DVjtqB5nOQourniz4p0YYEjr4t_6YUdAmAqQn97Dk-i6TEraZHh3hXSfbW3PYz2_35S9XGQyi5UYcbOU9ziA9wv1LhlVM3-CC5tmzFuuDSOmhYg"; // Replace with a valid token
 
@@ -27,7 +28,7 @@ function SearchAlbums({ addToRanking }) {
 
   return (
     <div>
-      <div>
+      <div claasName="searchBox">
         <input
           type="text"
           value={searchQuery}
