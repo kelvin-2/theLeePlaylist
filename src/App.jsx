@@ -5,6 +5,7 @@ import About from "./components/About";
 import Albums from "./components/Albums";
 import Artists from './components/Artists';
 import TopAlbums from "./components/SpotifyAlbums";
+import AuthForms from "./components/Login";
 
 
 function App() {
