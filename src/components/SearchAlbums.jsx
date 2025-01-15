@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import '../styles/searchAlbums.css'
 
-const SPOTIFY_TOKEN = "BQABzJOEpxY3SlyUAf-w1pWDO1g0WGsoAlgcW-0Wzcw-A21G45i54KHyIZZCC0DYiGq2P0gk8nmbcBI_5mQLK5qVvo_5GDXzDSPKC5d-S764NDfrjS78as2I19BVHWRGE745kuDCLweulwsadry2V9tC19C7lRjEQMlTVgVbYFWZWN5D3ZDxwp_j6FyQCGRJTgvS8v9Zfe7GDJ_Y_VBEHCAwBkAodG8JcHGkvTc5NoRXJv2wyADmssQHysN8KcHQk6Kc1KN6ZnMd8jENvDG9x9yvGt3hKItW"; // Replace with a valid token
+const SPOTIFY_TOKEN = ""; // Replace with a valid token
 
 function SearchAlbums({ addToRanking }) {
   const [searchQuery, setSearchQuery] = useState("");
