@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 
-const SPOTIFY_CLIENT_ID = "85c0258ab9a34e9fb597c3fdf2d71af9"; // Replace with your actual Client ID
-const SPOTIFY_CLIENT_SECRET = "d07d430c6c1a452196ce8c028bb7c3dc"; // Replace with your actual Client Secret
+const SPOTIFY_CLIENT_ID = "; // Replace with your actual Client ID
+const SPOTIFY_CLIENT_SECRET = ""; // 
 const REDIRECT_URI = "http://127.0.0.1:5173/"; // Your redirect URI
 
 const getAccessToken = async (code) => {
