@@ -12,7 +12,7 @@ async function searchAlbum(query) {
 
 
 function Albums() {
-  const token="BQA5DVjtqB5nOQourniz4p0YYEjr4t_6YUdAmAqQn97Dk-i6TEraZHh3hXSfbW3PYz2_35S9XGQyi5UYcbOU9ziA9wv1LhlVM3-CC5tmzFuuDSOmhYg";
+  const token="";
   return (
     <div className="container">
      <h1 className="heading">
