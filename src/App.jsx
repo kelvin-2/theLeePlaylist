@@ -5,7 +5,7 @@ import About from "./components/About";
 import Albums from "./components/Albums";
 import Artists from './components/Artists';
 import TopAlbums from "./components/SpotifyAlbums";
-import AuthForms from "./components/Login";
+//import AuthForms from "./components/Login";
 
 
 function App() {
@@ -23,6 +23,8 @@ function App() {
                 return <Artists/>
             case 'tiny_disk':
                 return <TopAlbums/>
+            case 'login':
+                <AuthForms/>
 
                 return <Home />;
         }

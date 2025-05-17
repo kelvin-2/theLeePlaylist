@@ -36,13 +36,6 @@ const NavBar = ({setCurrentPage, currentPage}) => {
                 >
                     Tiny Disk
                 </button>
-
-                <button 
-                    onClick={() => setCurrentPage('login')} 
-                    className={currentPage === 'login' ? activeClass : buttonClass}
-                >
-                    Login
-                </button>
             </ul>
         </nav>
     );

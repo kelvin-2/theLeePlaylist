@@ -6,3 +6,4 @@ function Simmy (){
         </div>
     )
 }
+export default Simmy;
