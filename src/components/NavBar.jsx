@@ -36,13 +36,6 @@ const NavBar = ({setCurrentPage, currentPage}) => {
                 >
                     Tiny Disk
                 </button>
-
-                <button 
-                    onClick={() => setCurrentPage('simmy')} 
-                    className={currentPage === 'simmy' ? activeClass : buttonClass}
-                >
-                    Simmy
-                </button>
             </ul>
         </nav>
     );
