@@ -4,7 +4,7 @@ import {
   SPOTIFY_CLIENT_ID,
   SPOTIFY_CLIENT_SECRET,
   REDIRECT_URI,
-} from "../config/spotify";
+} from "./spotify";
 
 export const useSpotifyAuth = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);

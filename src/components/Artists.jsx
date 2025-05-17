@@ -2,9 +2,14 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "../styles/TopArtists.css";
 
-const SPOTIFY_CLIENT_ID = "85c0258ab9a34e9fb597c3fdf2d71af9"; // Replace with your actual Client ID
-const SPOTIFY_CLIENT_SECRET = "d07d430c6c1a452196ce8c028bb7c3dc"; // Replace with your actual Client Secret
-const REDIRECT_URI = "http://127.0.0.1:5173/"; // Your redirect URI
+
+const SPOTIFY_CLIENT_ID = import.meta.env.VITE_SPOTIFY_CLIENT_ID;
+const SPOTIFY_CLIENT_SECRET = import.meta.env.VITE_SPOTIFY_CLIENT_SECRET;
+const REDIRECT_URI = import.meta.env.VITE_SPOTIFY_REDIRECT_URI;
+
+
+console.log("Client ID:", import.meta.env.VITE_SPOTIFY_CLIENT_ID);
+
 
 // Function to get the access token from the authorization code
 const getAccessToken = async (code) => {
@@ -28,17 +33,16 @@ const getAccessToken = async (code) => {
     );
 
     const { access_token, refresh_token, expires_in } = response.data;
-    console.log("Access Token:", access_token);
-    console.log("Refresh Token:", refresh_token);
-    console.log("Expires In:", expires_in);
 
-    // Store the tokens in localStorage or state
     localStorage.setItem("access_token", access_token);
     localStorage.setItem("refresh_token", refresh_token);
+
+    setIsAuthenticated(true); // <-- Move here, after token is stored
   } catch (error) {
     console.error("Error exchanging authorization code:", error);
   }
 };
+
 
 function TopArtists() {
   const [topArtists, setTopArtists] = useState([]);
